@@ -44,3 +44,29 @@ this is complete you can run the setup function by typing the following:
 ```
 php80 /usr/local/redpanel/webserver_centos8_multi_version_php_fpm/rpcmd.php setup
 ```
+
+After this runs, and you get a successful setup you can just type rpcmd without the 
+huge path, for example you can verify everything is running ok by typing:
+
+```
+rpcmd full-status 
+```
+
+###Usage Manual
+
+Command line for red panel always follows the same format, the first parameter is always 
+the function which we will show some examples for common tasks. The second parameter is 
+sometimes the sub-function depending on the parent functions purpose. Any following parameters 
+are parameters to be sent into the function/sub-function. In addition to the function, 
+sub-function and parameters there are also flags that can be specified. Some of these flags are 
+global, and some only apply to various function/sub-function pairs. I think the best way to 
+get the hang of it is to try some commands out.
+
+
+
+
+
+###Command Reference
+
+
+
