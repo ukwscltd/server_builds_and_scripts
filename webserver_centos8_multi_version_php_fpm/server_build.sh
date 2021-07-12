@@ -174,21 +174,3 @@ systemctl enable mariadb
 
 ln -s /usr/bin/php /usr/bin/php80
 
-###############################################################################
-# Download the management scripts and create a pointer so it can be ran from
-# the command line easily. If you do not want to use git to download the
-# project you can install it manually but ensure it is at the location
-# /usr/local/redpanel.
-###############################################################################
-
-mkdir /usr/local/redpanel
-
-git clone git@github.com:ukwscltd/server_builds_and_scripts.git /usr/local/redpanel
-
-cat > /usr/bin/rpcmd <<EOL
-#!/bin/bash
-php80 /usr/local/redpanel/rpcmd.php "$@"
-EOL
-
-chmod +x /usr/bin/rpcmd
-
