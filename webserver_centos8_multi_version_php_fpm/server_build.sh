@@ -172,5 +172,7 @@ systemctl enable mariadb
 # php80.
 ###############################################################################
 
-ln -s /usr/bin/php /usr/bin/php80
+rm -f /usr/bin/php
+
+ln -s /usr/bin/php80 /usr/bin/php
 
