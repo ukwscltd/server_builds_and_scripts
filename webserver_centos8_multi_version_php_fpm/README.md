@@ -29,5 +29,18 @@ script.
 
 You may see an error to do with firewalld not being found, it is safe to 
 ignore this error because it just means that firewalld was not installed. I 
-only put that in in case other providers bundle it in their images.
+only put that in case other providers bundle it in their images.
 
+Now the packages are installed you need to install the management software, 
+you can do this by cloning the repository using the following command:
+
+```
+git clone https://github.com/ukwscltd/server_builds_and_scripts.git /usr/local/redpanel
+```
+
+This will install the project files in your local software directory and once 
+this is complete you can run the setup function by typing the following:
+
+```
+php80 /usr/local/redpanel/webserver_centos8_multi_version_php_fpm/rpcmd.php setup
+```
